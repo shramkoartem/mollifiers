@@ -1,0 +1,102 @@
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --primary-color: #3b82f6;
+  --secondary-color: #6c757d;
+  --accent-color: #ef4444;
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  color: #111827;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.math-block {
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.visualization-container {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+input[type="range"] {
+  width: 200px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
